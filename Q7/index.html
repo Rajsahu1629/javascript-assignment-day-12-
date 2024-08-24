@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="library-container">
+        <h1>Library Management System</h1>
+
+        <!-- Book Management Section -->
+        <section id="book-section">
+            <h2>Books</h2>
+            <form id="book-form">
+                <input type="hidden" id="book-id">
+                <input type="text" id="book-title" placeholder="Title" required>
+                <input type="text" id="book-author" placeholder="Author" required>
+                <input type="text" id="book-genre" placeholder="Genre" required>
+                <input type="number" id="book-year" placeholder="Published Year" required>
+                <label>
+                    <input type="checkbox" id="book-available"> Available
+                </label>
+                <button type="submit" id="add-book-btn">Add Book</button>
+            </form>
+            <div id="book-list"></div>
+            <div id="book-pagination"></div>
+        </section>
+
+        <!-- Member Management Section -->
+        <section id="member-section">
+            <h2>Members</h2>
+            <form id="member-form">
+                <input type="hidden" id="member-id">
+                <input type="text" id="member-name" placeholder="Name" required>
+                <input type="date" id="member-date" required>
+                <label>
+                    <input type="checkbox" id="member-active"> Active
+                </label>
+                <button type="submit" id="add-member-btn">Add Member</button>
+            </form>
+            <div id="member-list"></div>
+            <div id="member-pagination"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
